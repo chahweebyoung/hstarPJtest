@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 가상 클래스 */
+        a:link { color: blue; text-decoration: underline; }
+        /* 파란색 글씨에 밑줄 */
+        a:visited { color: red; }
+        /* 방문한 기록이 있을 경우 빨간색 */
+        a:hover { text-decoration: overline; }
+        a:active { background-color: yellow; }
+        /* 클릭하는순간에 = active가 됬을때 */
+    
+        div.d1 { border: 1px dashed red; width: 400px; padding: 5px; }
+        /* border 속성이 끝나면 세미콜론 1px짜리 빨간 선에다 너비 패딩(안쪽부분)*/
+        /* 가상 클래스 */
+        div.d1:hover { background-color: yellow; }
+        /* d1에 마우스를 올렸을경우 */
+        
+        div.d2 { border: 1px dashed green; width: 400px; padding: 5px; }
+        /* 가상 클래스 */
+        div.d2:hover { background-color: green; }
+    </style>
+</head>
+<body>
+    <h2>Pseudo Class</h2>
+    <p><a href="http://www.w3.org" target="_blink">W3C 방문</a> 
+			: 마우스 이벤트에 따른 링크의 변화를 잘 보세요.</p>
+    <div class="d1">
+        <!-- 클래스를 d1으로 정의 -->
+        <h3>가상 클래스 1 영역</h3>
+        마우스 위치에 따른 박스의 스타일 변화를 보세요. 
+    </div>
+    <div class="d2">
+        <h3>가상 클래스 2 영역</h3>
+        마우스 위치에 따른 박스의 스타일 변화를 보세요. 
+    </div>
+</body>
+</html>

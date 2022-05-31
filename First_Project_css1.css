@@ -1,0 +1,200 @@
+/* CSS입니다. */
+@charset "utf-8";
+
+.Main_Title {
+    text-align: center;
+    color: white;
+    font-size: 300%;
+
+}
+
+.Main_Sub_Title {
+    text-align: center;
+    color: white;
+    font-size: 120%;
+}
+
+.Last_text {
+    /* 워터마크 */
+    /* fixed = 고정시키다 */
+    position: fixed;
+    /* 맨아래 */
+    bottom: 0.7%;
+    /* 투명도조절 */
+    opacity: 0.5;
+    /* 너비는 꽉채운다 */
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.Body_title {
+    /* padding 으로 여백설정 */
+    padding: 0.7% 0 0 0;
+    /* 너비와 높이설정 */
+    width: 95%;
+    height: 80%;
+    /* 포지션 설정 */
+    position: absolute;
+    text-align: center;
+    /* 글자를 가운데로 해줌으로 아래 라디오 박스의 텍스트 영역도 가운데로 지정해줍니다 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Option {
+    /* 옵션창 영역지정입니다. */
+    width: 520;
+    height: 50;
+    padding: 0 0 1.9% 0;
+    margin: 0 auto;
+    color: white;
+}
+
+.Search_Bar {
+    /* 검색창 영역지정입니다. */
+    display: flex;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0 0 1.9% 0;
+}
+
+input[id=Search_Bar_Entity] {
+    /* 검색창 스타일 설정입니다. */
+
+    padding: 0 0 0 0.8%;
+    width: 120%;
+    height: 50px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    /* 모서리 설정 */
+    backdrop-filter: blur(10px);
+    /* 백드롭 영역 블러설정입니다. */
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.3);
+    /* 그림자 지정입니다. */
+    color: white;
+    border: none;
+}
+
+/* 텍스트상자의 placeholder설정부분입니다. */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.329);
+}
+
+.Search_Engine_Radio {
+    /* 라디오선택부분 영역지정입니다. */
+    width: 80%;
+    height: 9%;
+    padding: 0% 0 1.9% 0;
+    margin: 0 auto;
+    color: white;
+}
+
+
+/* 검색버튼입니다. */
+.Button_hello {
+    /* 검색 버튼 영역지정입니다. */
+    margin-left: 2%;
+    width: 100px;
+    height: 50px;
+}
+
+input[id=Search_Btn_Entity] {
+    /* 버튼 스타일 설정입니다. */
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 30px;
+}
+
+:hover.Button_hello {
+    /* 검색버튼에 마우스를 올렸을때 입니다. */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+
+
+/* 클립보드 버튼입니다. */
+.Button_Clip {
+    /* 버튼영역을 만들어줍니다. */
+    margin-left: 2%;
+    width: 100px;
+    height: 50px;
+}
+
+input[id=Clip_Btn_Entity] {
+    /* 버튼 스타일 설정입니다. */
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 30px;
+}
+
+:hover.Button_Clip {
+    /* 클립보드 버튼에 마우스를 올렸을 경우입니다. */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+
+
+/* 표 형 바로가기버튼들 집합 메뉴입니다. */
+
+.Quick_Btn {
+    /* 영역지정 */
+    border: 2px solid rgba(0, 0, 0, 0.479);
+    border-radius: 10px;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.445);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+}
+
+th,
+td,
+table {
+    /* 표 디자인입니다. */
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+input[id=Q_BTN_Entity] {
+    /* 버튼들 디자인입니다. */
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+:hover[id=Q_BTN_Entity] {
+    /* 버튼에 마우스를 올렸을때 디자인입니다. */
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: none;
+    background-color: rgba(247, 247, 247, 0.2);
+    border-radius: 10px;
+}
